@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Rubik';
+}
+
+.button_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    padding: 100px;
+}
+
+.button_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.button_box:nth-last-child(1) {
+    margin-right: 0;
+}
+
+.button_text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #7B7B7B;
+}
+
+.button {
+    margin-top: 45px;
+    background: #5300C9;
+    border: solid ;
+    border-radius: 11px;
+    width: 138px;
+    height: 48px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #8647E0;
+    /* border: solid #8647E0; */
+    transition: background-color 0.5s ;
+}
+
+.button:focus {
+    background: #5300C9;
+    border: 3px solid #DCC3FF;
+    transition: 0.3s;
+}
+.button:active {
+    background: #4400A5;
+}
+
+.button:disabled {
+    background: #E4E4E4;
+    cursor: default;
+}
